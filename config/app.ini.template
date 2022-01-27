@@ -1,4 +1,20 @@
-#Postgres
+[log]
+BasePath = /var/log/
+SubDir = true
+
+[server]
+RunMode = release
+AppName = AppName
+HTTPPort = 8004
+
+[redis]
+Host = 127.0.0.1
+Port = 6379
+DB = 0
+Password = r00tme
+
+
+[Postgres]
 APP_ENV=local
 API_PORT=8888
 DB_HOST=127.0.0.1
@@ -9,14 +25,6 @@ DB_USER=steven
 DB_PASSWORD=password
 DB_NAME=food-app
 DB_PORT=5432
-
-#Mysql
-#DB_HOST=127.0.0.1
-#DB_DRIVER=mysql
-#DB_USER=steven
-#DB_PASSWORD=here
-#DB_NAME=food-app
-#DB_PORT=3306
 
 
 #Postgres Test DB
@@ -32,13 +40,6 @@ REDIS_HOST=127.0.0.1
 REDIS_PORT=6379
 REDIS_PASSWORD=
 
-
-#DO_SPACES_KEY=your-space-key
-#DO_SPACES_SECRET=secret
-#DO_SPACES_TOKEN=token
-#DO_SPACES_ENDPOINT=url
-#DO_SPACES_REGION=region
-#DO_SPACES_URL=photo_url
 
 
 
